@@ -1,0 +1,23 @@
+a {
+    pointer:cursor;
+}
+
+page-footer {
+  background-color: #2C2723;
+  width: 100%;
+  bottom: 0;
+  position: bottom;
+}
+
+#foot {
+  color: white;
+  text-align: center;
+  position: bottom
+}
+
+/*.carousel {
+
+	size: 100%
+	position: center;
+	width:  100%;
+}*/

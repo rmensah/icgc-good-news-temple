@@ -1,0 +1,23 @@
+{
+  "name": "icgc-good-news-temple",
+  "version": "1.0.0",
+  "description": "Church Website For International Central Gospel Church, Good News Temple, New Jersey",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmensah/icgc-good-news-temple.git"
+  },
+  "author": "Richard Mensah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmensah/icgc-good-news-temple/issues"
+  },
+  "homepage": "https://github.com/rmensah/icgc-good-news-temple#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "path": "^0.12.7"
+  }
+}
