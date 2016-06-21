@@ -24,7 +24,31 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
         .state('contact', {
             url: "/contact",
             template:"<h3 class='text-center'>This is Contact Page!</h3>",
-        });
+        })
+        .state('mission', {
+            url: "/mission",
+            templateUrl:"../views/mission.html",
+        })
+         .state('philosophy', {
+            url: "/philosophy",
+            templateUrl:"../views/philosophy.html",
+        })
+         .state('faith', {
+            url: "/faith",
+            templateUrl:"../views/faith.html",   
+        })
+         .state('our-message', {
+            url: "/our-message",
+            templateUrl:"../views/our-message.html",
+        })    
+          .state('otabil', {
+            url: "/otabil",
+            templateUrl:"../views/otabil.html",
+        })
+            .state('augustine', {
+            url: "/augustine",
+            templateUrl:"../views/augustine.html",
+        })
 
       $locationProvider.html5Mode(true);  
 });
