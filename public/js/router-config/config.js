@@ -11,11 +11,11 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
         })
 			.state('home.step1', {
 				url: "/step1",
-				templateUrl:'app/partials/step1.template.html'
+				templateUrl:'../views/step1.template.html'
 			})
 			.state('home.step2', {
 				url: "/step2",
-				templateUrl:'app/partials/step2.template.html'
+				templateUrl:'../views/step2.template.html'
 			})
         .state('about', {
             url: "/about",

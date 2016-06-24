@@ -2,17 +2,24 @@ a {
     pointer:cursor;
 }
 
-#page-footer {
-  background-color: #2C2723;
+.nav-wrapper {
+
+  background-color: teal;
+}
+
+.page-footer {
+  background-color: teal;
   width: 100%;
   bottom: 0;
-  position: bottom;
+  position: fixed;
 }
 
 #foot {
   color: white;
+  background-color: teal;
   text-align: center;
-  position: bottom
+  position: fixed;
+  bottom: 0;
 }
 
 /*.carousel {
