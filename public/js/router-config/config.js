@@ -1,4 +1,4 @@
-var app = angular.module('icgcapp', ['ui.router']);
+var app = angular.module('icgcapp', ['ui.bootstrap','ui.router','ngAnimate']);
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
 	
 	/* defaulting to /home to display home.template.html */
@@ -7,7 +7,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
         .state('home', {
             url: "/home",
             templateUrl:'../views/partial-home.html'
-            // controller:'homeController'
+            controller:'MainCtrl'
         })
 			.state('home.step1', {
 				url: "/step1",
@@ -51,4 +51,22 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
         })
 
       $locationProvider.html5Mode(true);  
+});
+
+app.controller('MainCtrl', function($scope) {
+  $scope.myInterval = 3000;
+
+  $scope.slides = [{
+    'image': 'http://i.ytimg.com/vi/ReF6iQ7M5_A/maxresdefault.jpg',
+    'caption': 'test1',
+    'subcap': 'test'
+  }, {
+    'image': 'http://i.ytimg.com/vi/ReF6iQ7M5_A/maxresdefault.jpg',
+    'caption': 'test2',
+    'subcap': 'test'
+  }, {
+    'image': 'http://i.ytimg.com/vi/ReF6iQ7M5_A/maxresdefault.jpg',
+    'caption': 'test3',
+    'subcap': 'test'
+  }];
 });
