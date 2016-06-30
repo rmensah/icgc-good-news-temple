@@ -1,4 +1,4 @@
-var app = angular.module('icgcapp', ['ui.bootstrap','ui.router','ngAnimate']);
+var app = angular.module('icgcapp', ['ui.router','ui.bootstrap','ngAnimate'])
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
 	
 	/* defaulting to /home to display home.template.html */
@@ -6,7 +6,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
     $stateProvider
         .state('home', {
             url: "/home",
-            templateUrl:'../views/partial-home.html'
+            templateUrl:'../views/partial-home.html',
             controller:'MainCtrl'
         })
 			.state('home.step1', {
@@ -51,7 +51,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
         })
 
       $locationProvider.html5Mode(true);  
-});
+}); 
 
 app.controller('MainCtrl', function($scope) {
   $scope.myInterval = 3000;
