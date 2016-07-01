@@ -29,6 +29,39 @@ a {
 	width:  100%;
 }*/
 
+/* Put your css in here */
+    /*.carousel {
+        margin-bottom: 60px;
+    }
+    
+    html,
+    body,
+    #myCarousel,
+    .carousel,
+    .carousel-inner,
+    .item,
+    .active {
+        height: 100%;
+    }
+    
+    .bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    .carousel-indicators {
+        position: absolute;
+        height: 12px;
+    }
+
+   */
+   
+
+    /* carousel end */
+
+
+
 #header {
     background-color:black;
     color:white;
@@ -55,3 +88,5 @@ a {
     text-align:center;
     padding:5px; 
 }
+
+

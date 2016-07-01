@@ -7,7 +7,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
         .state('home', {
             url: "/home",
             templateUrl:'../views/partial-home.html',
-            controller:'MainCtrl'
+            controller:'CarouselDemoCtrl'
         })
 			.state('home.step1', {
 				url: "/step1",
@@ -53,20 +53,44 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
       $locationProvider.html5Mode(true);  
 }); 
 
-app.controller('MainCtrl', function($scope) {
+app.controller('CarouselDemoCtrl', function($scope) {
   $scope.myInterval = 3000;
 
   $scope.slides = [{
-    'image': 'http://i.ytimg.com/vi/ReF6iQ7M5_A/maxresdefault.jpg',
+    'image': '../../images/church_photo_001.png',
     'caption': 'test1',
     'subcap': 'test'
   }, {
-    'image': 'http://i.ytimg.com/vi/ReF6iQ7M5_A/maxresdefault.jpg',
+    'image': '../../images/church_photo_002.png',
     'caption': 'test2',
     'subcap': 'test'
   }, {
-    'image': 'http://i.ytimg.com/vi/ReF6iQ7M5_A/maxresdefault.jpg',
+    'image': '../../images/church_photo_003.png',
+    'caption': 'test2',
+    'subcap': 'test'
+  }, {
+    'image': '../../images/church_photo_augustine_002.png',
     'caption': 'test3',
     'subcap': 'test'
   }];
 });
+
+// Test
+
+// function CarouselDemoCtrl($scope){
+//   $scope.myInterval = 3000;
+//   $scope.slides = [
+//     {
+//       image: '../../images/church_photo_003.png'
+//     },
+//     {
+//       image: '../../images/church_photo_003.png'
+//     },
+//     {
+//       image: '../../images/church_photo_003.png'
+//     },
+//     {
+//       image: '../../images/church_photo_003.png'
+//     }
+//   ];
+// }
