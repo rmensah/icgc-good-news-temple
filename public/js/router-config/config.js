@@ -23,7 +23,8 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
         })
         .state('contact', {
             url: "/contact",
-            template:"<h3 class='text-center'>This is Contact Page!</h3>",
+            templateUrl:'../views/contact.html'
+            // template:"<h3 class='text-center'>This is Contact Page!</h3>",
         })
         .state('mission', {
             url: "/mission",
